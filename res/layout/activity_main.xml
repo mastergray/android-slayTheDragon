@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" > 
+     
+      <RelativeLayout
+        android:id="@+id/battleView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="1.0"
+        android:layout_above="@+id/menuLayout"
+        android:background="@color/battleViewBG" >
+        
+         <TextView
+             android:id="@+id/statusBarDisplay"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/statusBarBG"
+             android:padding="4dp"
+             android:text="Dragon 100 / 100"
+             android:textColor="@color/statusText" />
+
+         <LinearLayout
+             android:id="@+id/ground"
+             android:layout_width="fill_parent"
+             android:layout_height="50dp"   
+             android:layout_alignParentBottom="true"
+             android:background="@drawable/grass_background"
+             android:orientation="horizontal" >
+         </LinearLayout>
+
+         <ImageView
+             android:id="@+id/dragonView"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_above="@+id/ground"
+             android:layout_alignParentLeft="true"
+             android:layout_marginLeft="54dp"
+             android:background="@drawable/dragon"
+              />
+
+         <ImageView
+             android:id="@+id/knightView"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_above="@+id/ground"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="67dp"
+             android:background="@drawable/knight" />
+         
+     </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/menuLayout"
+         android:animateLayoutChanges="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:alpha="1.0"
+        android:layout_alignParentBottom="true"
+        android:background="@color/menuBackground"
+        android:padding="10dp"
+        android:orientation="vertical" >
+
+     <RelativeLayout
+        android:id="@+id/playerStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:alpha="1.0"
+        android:background="@color/menuBackground"  >
+
+         <TextView
+             android:id="@+id/playerLifeDisplay"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Life 100 / 100"
+             android:textColor="@color/statusText" />
+
+         <TextView
+             android:id="@+id/playerPowerDisplay"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:textColor="@color/statusText"
+             android:text="Power 0 / 100" />
+  
+       </RelativeLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:alpha="1.0"
+        android:text="@string/buttonText1"
+        android:textColor="@color/menuButtonText" />
+
+     <Button
+         android:id="@+id/button2"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:alpha="1.0"
+         android:text="@string/buttonText2"
+         android:textColor="@color/menuButtonText" />
+     
+     <Button
+         android:id="@+id/button3"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:alpha="1.0"
+         android:text="@string/buttonText3"
+         android:textColor="@color/menuButtonText" />
+     
+       <Button
+         android:id="@+id/button4"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:alpha="1.0"
+         android:text="@string/buttonText4"
+         android:textColor="@color/menuButtonText" />
+
+      </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="menuBackground">#000000</color>
+    <color name="menuButtonBG">#CCCCCC</color>
+    <color name="menuButtonText">#FFFFFF</color>
+    <color name="statusText">#FFFFFF</color>
+    <color name="statusBarBG">#0000FF</color>
+    <color name="battleViewBG">#00BFFF</color>
+    <color name="textDisplayBG">#000000</color>
+    
+</resources>

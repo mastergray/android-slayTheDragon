@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Slay The Dragon! v0.1</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="buttonText1">Attack</string>
+	<string name="buttonText2">Defend</string>
+	<string name="buttonText3">Focus</string>
+	<string name="buttonText4">Pray</string>
+</resources>
